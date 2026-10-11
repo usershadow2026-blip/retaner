@@ -15,7 +15,7 @@ async def cmd_start(message: types.Message):
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
             InlineKeyboardButton(
-                text="🚀 Запустить Шахед Магнат", 
+                text="🚀 Запустить Симулятор", 
                 web_app=WebAppInfo(url=GAME_URL)
             )
         ]
@@ -23,7 +23,7 @@ async def cmd_start(message: types.Message):
     
     welcome_text = (
         f"Привет, {message.from_user.first_name}! 🏭\n\n"
-        "Добро пожаловать в симулятор конструкторского бюро дронов!\n"
+        "Добро пожаловать в симулятор конструкторского бюро!\n"
         "Собирай ресурсы, прокачивай свой завод, совершай тестовые запуски "
         "и копи монеты для вывода реальных подарков совершенно бесплатно!\n\n"
         "Нажми кнопку ниже, чтобы запустить игру прямо сейчас 👇"
